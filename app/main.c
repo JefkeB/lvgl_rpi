@@ -7,6 +7,9 @@
 #include <time.h>
 #include <sys/time.h>
 
+#include "gui.h"
+
+
 #define DISP_BUF_SIZE (80 * LV_HOR_RES_MAX)
 
 int main(void)
@@ -40,7 +43,8 @@ int main(void)
   	lv_indev_drv_register(&indev_drv);
 
     /*Create a Demo*/
-    lv_demo_widgets();
+    //lv_demo_widgets();
+	screen();
 
     /*Handle LitlevGL tasks (tickless mode)*/
     while(1) {
