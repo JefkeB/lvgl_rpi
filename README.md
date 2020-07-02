@@ -1,7 +1,10 @@
 # linux_frame_buffer  
 LittlevGL configured to work with /dev/fb0 on Linux  
   
-  
+---  
+git clone --recurse-submodules https://github.com/JefkeB/lvgl_rpi.git  
+make or make -j4
+
 ---
 **NOTE**  
 When starting the application a block cursor is visible.
